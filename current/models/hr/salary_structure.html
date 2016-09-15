@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -187,102 +183,6 @@
         
         <tr >
             <td>2</td>
-            <td class="danger" title="Mandatory"><code>employee</code></td>
-            <td >
-                Link</td>
-            <td >
-                Employee
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="https://frappe.github.io/erpnext/current/models/hr/employee">Employee</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>3</td>
-            <td ><code>employee_name</code></td>
-            <td >
-                Data</td>
-            <td >
-                Employee Name
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>4</td>
-            <td ><code>branch</code></td>
-            <td >
-                Link</td>
-            <td >
-                Branch
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="https://frappe.github.io/erpnext/current/models/hr/branch">Branch</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>5</td>
-            <td ><code>designation</code></td>
-            <td >
-                Link</td>
-            <td >
-                Designation
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="https://frappe.github.io/erpnext/current/models/hr/designation">Designation</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
-            <td ><code>department</code></td>
-            <td >
-                Link</td>
-            <td >
-                Department
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="https://frappe.github.io/erpnext/current/models/hr/department">Department</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>7</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -303,7 +203,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>3</td>
             <td ><code>letter_head</code></td>
             <td >
                 Link</td>
@@ -324,7 +224,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>4</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -336,7 +236,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>is_active</code></td>
             <td >
                 Select</td>
@@ -352,7 +252,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>6</td>
             <td ><code>is_default</code></td>
             <td >
                 Select</td>
@@ -367,7 +267,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>7</td>
             <td class="danger" title="Mandatory"><code>from_date</code></td>
             <td >
                 Date</td>
@@ -379,7 +279,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>8</td>
             <td ><code>to_date</code></td>
             <td >
                 Date</td>
@@ -391,7 +291,41 @@ No</pre>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>9</td>
+            <td ><code>employee_break</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td class="danger" title="Mandatory"><code>employees</code></td>
+            <td >
+                Table</td>
+            <td >
+                Employees
+                <p class="text-muted small">
+                    Select employees for current Salary Structure</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="https://frappe.github.io/erpnext/current/models/hr/salary_structure_employee">Salary Structure Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>11</td>
             <td ><code>time_sheet_earning_detail</code></td>
             <td >
                 Section Break</td>
@@ -403,7 +337,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>12</td>
             <td ><code>salary_slip_based_on_timesheet</code></td>
             <td >
                 Check</td>
@@ -415,7 +349,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>13</td>
             <td ><code>column_break_17</code></td>
             <td class="info">
                 Column Break</td>
@@ -427,7 +361,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>14</td>
             <td ><code>salary_component</code></td>
             <td >
                 Link</td>
@@ -449,7 +383,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>15</td>
             <td ><code>hour_rate</code></td>
             <td >
                 Currency</td>
@@ -461,7 +395,7 @@ No</pre>
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>16</td>
             <td ><code>earning_deduction</code></td>
             <td >
                 Section Break</td>
@@ -473,11 +407,11 @@ No</pre>
             <td></td>
         </tr>
         
-        <tr >
-            <td>20</td>
+        <tr class="info">
+            <td>17</td>
             <td ><code>earning</code></td>
-            <td class="info">
-                Column Break</td>
+            <td >
+                Section Break</td>
             <td >
                 Earning
                 
@@ -486,7 +420,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>18</td>
             <td ><code>earnings</code></td>
             <td >
                 Table</td>
@@ -506,11 +440,11 @@ No</pre>
             </td>
         </tr>
         
-        <tr >
-            <td>22</td>
+        <tr class="info">
+            <td>19</td>
             <td ><code>deduction</code></td>
-            <td class="info">
-                Column Break</td>
+            <td >
+                Section Break</td>
             <td >
                 Deduction
                 
@@ -519,7 +453,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>20</td>
             <td ><code>deductions</code></td>
             <td >
                 Table</td>
@@ -540,7 +474,7 @@ No</pre>
         </tr>
         
         <tr class="info">
-            <td>24</td>
+            <td>21</td>
             <td ><code>net_pay_detail</code></td>
             <td >
                 Section Break</td>
@@ -554,7 +488,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>22</td>
             <td ><code>column_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -566,11 +500,11 @@ No</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>23</td>
             <td ><code>total_earning</code></td>
             <td >
                 Currency</td>
-            <td >
+            <td class="text-muted" title="Hidden">
                 Total Earning
                 
             </td>
@@ -580,11 +514,11 @@ No</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>24</td>
             <td ><code>total_deduction</code></td>
             <td >
                 Currency</td>
-            <td >
+            <td class="text-muted" title="Hidden">
                 Total Deduction
                 
             </td>
@@ -594,23 +528,11 @@ No</pre>
         </tr>
         
         <tr >
-            <td>28</td>
-            <td ><code>column_break3</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>29</td>
+            <td>25</td>
             <td ><code>net_pay</code></td>
             <td >
                 Currency</td>
-            <td >
+            <td class="text-muted" title="Hidden">
                 Net Pay
                 
             </td>
@@ -645,80 +567,10 @@ No</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="autoname" href="#autoname" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>autoname</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="check_overlap" href="#check_overlap" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>check_overlap</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_employee_details" href="#get_employee_details" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>get_employee_details</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="get_ss_values" href="#get_ss_values" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>get_ss_values</b>
         <i class="text-muted">(self, employee)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="make_earn_ded_table" href="#make_earn_ded_table" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>make_earn_ded_table</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="make_table" href="#make_table" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>make_table</b>
-        <i class="text-muted">(self, doct_name, tab_fname, tab_name)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -757,20 +609,6 @@ No</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="validate_employee" href="#validate_employee" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>validate_employee</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="validate_joining_date" href="#validate_joining_date" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>validate_joining_date</b>
@@ -796,7 +634,7 @@ No</pre>
         <a name="erpnext.hr.doctype.salary_structure.salary_structure.make_salary_slip" href="#erpnext.hr.doctype.salary_structure.salary_structure.make_salary_slip" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		erpnext.hr.doctype.salary_structure.salary_structure.<b>make_salary_slip</b>
-        <i class="text-muted">(source_name, target_doc=None)</i>
+        <i class="text-muted">(source_name, target_doc=None, employee=None, as_print=False, print_format=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

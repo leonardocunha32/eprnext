@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -135,29 +131,37 @@
 					<div class="page_content">
 <h1>How To Freeze Accounting Ledger?</h1>
 
-<p>You can freeze any accounting ledger in ERPNext. So that frozen accounting ledger became unsearchable in accounting transaction. Follow below step to understand the process.</p>
+<p>If you want to discontinue using specific Account, you can freeze it.</p>
 
-<h4>1. Set Frozen Accounts Modifier</h4>
+<blockquote>
+  <p>Account can be Frozen by the User having specific Role. This Role for set in the Account Settings, in the field "Role Allowed to Set Frozen Accounts &amp; Edit Frozen Entries".</p>
+</blockquote>
 
-<p>To set frozen accounts modifier go to <code>Accounts &gt; Setup &gt; Accounts Setting</code></p>
+<p>Please check following steps to freeze an Account from the Chart of Accounts master.</p>
 
-<p>Search and select Role under Frozen Accounts Modifier field and save the Account Settings form. </p>
+<h4>Step 1: Chart of Accounts</h4>
 
-<p><img src="https://frappe.github.io/erpnext/assets/img/articles/Selection_001f1e2ff.png" alt="Account Settings" /></p>
+<p>To edit an Account, go to Chart of Accounts:</p>
 
-<h4>2. Edit Accounting Ledger.</h4>
+<p><code>Explore &gt; Accounts &gt; Chart of Accounts</code></p>
 
-<p>To edit accounting ledger go to <code>Accounts &gt; Setup &gt; Chart of Accounts</code></p>
+<p><img class="screenshot" alt="Freeze Account" src="https://frappe.github.io/erpnext/assets/img/articles/freeze-account-1.png"></p>
 
-<p><img src="https://frappe.github.io/erpnext/assets/img/articles/Selection_0027e4d09.png" alt="Account Settings" /></p>
+<p>Click on Account in which Frozen Date is to be updated.</p>
 
-<h4>3. Set Frozen Status of Ledger.</h4>
+<h4>Step 2: Set Account as Frozen</h4>
 
-<p><img src="https://frappe.github.io/erpnext/assets/img/articles/Selection_003bf981b.png" alt="Account Settings" /></p>
+<p>In the Account form, you will find a field called <strong>Frozen</strong>. Set value in this field as 'Yes'</p>
 
-<p>Set Frozen field status of ledger as 'Yes' and save the ledger form. On save this ledger will be frozen and you will became unable to search this ledger in accounting transactions. </p>
+<p><img class="screenshot" alt="Freeze Account" src="https://frappe.github.io/erpnext/assets/img/articles/freeze-account-2.png"></p>
 
-<div class ="well"> Note: If you want to make accounting transaction against this ledger in the future, then that time again set frozen field status as 'No'.</div>
+<h4>Step 3: Save</h4>
+
+<p>After update Save an Account.  </p>
+
+<p>On saving, this Account will be frozen and will not be selectable in any accounting transaction.</p>
+
+<div class ="well"> Note: In future, if you want to make an accounting transaction against this Account, then you can unfreeze this account by setting values in the Frozen field as 'No'.</div>
 
 <!-- markdown -->
 

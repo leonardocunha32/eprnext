@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Letter Heads</title>
+	<title>Letter Head</title>
 	<meta name="generator" content="frappe">
     <link type="text/css" rel="stylesheet" href="https://frappe.github.io/erpnext/assets/css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="https://frappe.github.io/erpnext/assets/css/hljs.css">
@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -133,31 +129,48 @@
 						</div>
 					</div>
 					<div class="page_content">
-<h1>Letter Heads</h1>
+<h1>Letter Head</h1>
 
-<p>You can manage multiple letter heads in ERPNext. In a letter head you can:</p>
+<p>Each company has default Letter Head for their company. This Letter Head values are generally set as Header and Footer in the documents. In ERPNext, you can capture the these details in the Letter Head master.</p>
+
+<p>In the Letter Head master, you can track Header and Footer details of the company. These details will appear in the Print Format of the transactions like Sales Order, Sales Invoice, Salary Slip, Purchase Order etc.</p>
+
+<h4>Step 1: Go to Setup</h4>
+
+<p><code>Explore &gt; Setup &gt; Printing &gt; Letter Head &gt; New Letter Head</code></p>
+
+<h4>Step 2: Letter Head Name</h4>
+
+<p>In one ERPNext account, you can enter multiple Letter Head, hence name Letter Head so that you can identify it easily. For example, if your Letter Head also contains office address, then you should create separate Letter Head for each office location.</p>
+
+<h4>Step 3: Enter Details</h4>
+
+<p>Following is how you can enter details in the Letter Head.</p>
 
 <ul>
-<li>Create an image with your logo, brand and other information that you want to put on your letter head.</li>
-<li>Attach the image in your Letter Head record by clicking on image icon to automatically generate the HTML required for this Letter Head.</li>
-<li>If you want to make this the default letter head, click on “Is Default”.</li>
+<li>Logo Image: You can insert the image in your Letter Head record by clicking on image icon. Once image is inserted, HTML for it will be generated automatically.</li>
+<li>Other information (like Address, tax ID etc.) that you want to put on your letter head.</li>
 </ul>
-
-<p>Your letter head will now appear in all Prints and Emails of documents.</p>
-
-<p>You can create / manage Letter Heads from:</p>
-
-<blockquote>
-  <p>Setup &gt; Printing &gt; Letter Head &gt; New Letter Head</p>
-</blockquote>
-
-<h3>Example</h3>
 
 <p><img class="screenshot" alt="Print Heading" src="https://frappe.github.io/erpnext/assets/img/setup/print/letter-head.png"></p>
 
-<p>This is how the letter head looks in a document print:</p>
+<blockquote>
+  <p>If you want to make this the default letter head, click on “Is Default”.</p>
+</blockquote>
+
+<h4>Step 4: Save</h4>
+
+<p>After enter values in the Header and Footer section, Save Letter Head.</p>
+
+<h4>Letter Head in the Print Format</h4>
+
+<p>This is how the letter head looks in a document's print.</p>
 
 <p><img class="screenshot" alt="Print Heading" src="https://frappe.github.io/erpnext/assets/img/setup/print/letter-head-1.png"></p>
+
+<blockquote>
+  <p>Please note that Footer will be visible only when document's print is seen in the PDF. Footer will not be visible in the HTML based print preview.</p>
+</blockquote>
 
 <p><p class="btn-next-wrapper">Next: <a class="btn-next" href="https://frappe.github.io/erpnext/user/manual/en/setting-up/print/address-template">Address Template</a></p></p>
 

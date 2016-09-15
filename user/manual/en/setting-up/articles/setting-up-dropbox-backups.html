@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -135,78 +131,79 @@
 					<div class="page_content">
 <h1>Setting Up Dropbox Backups</h1>
 
-<h1>Setting Up Dropbox Backups</h1>
+<p>We always recommend customers to maintain backup of their data in ERPNext. he database backup is downloaded in the form of an SQL file. If needed, this SQL file of backup can be restored in the another ERPNext account as well.</p>
 
-<p style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px;">If you wish to store your backups on a periodic basis,on Dropbox, you can do it directly through ERPNext.</p>
-<blockquote style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px; background-color: rgb(247, 247, 247);">
-    <p>Setup &gt; Manage 3rd Party Backups</p>
-</blockquote>
-<p style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px;"><strong>Step 1:</strong>&nbsp;Click on Integrations &gt; Backup Manager
-    <br>
-</p>
-<br>
-<div>
-    <p style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px;">In the Backup Manager page, enter the email addresses of those people whom you wish to notify about the upload status. Under the topic 'Sync with Dropbox', select whether you wish to upload Daily, Weekly or Never.</p>
-    <p style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px;"><strong>Step 2</strong> Click on&nbsp;<strong>Allow Dropbox Access</strong>.</p>
-    <blockquote style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px; background-color: rgb(247, 247, 247);">
-        <p>Tip: In future, if you wish to discontinue uploading backups to dropbox, then select the Never option.</p>
-    </blockquote>
-    <img src="{{ docs_base_path }}/assets/img/articles/Screen Shot 2015-09-23 at 1.02.52 pm.png">
-</div>
-<div>&nbsp;
-    <br>
-</div>
-<div><b>
-    Step 3</b>
-    <br>
-</div>
-<div>
-    <p style="font-family: 'Noto Sans', sans-serif; line-height: 23.7999992370605px;">You need to login to your dropbox account, with your user id and password.</p>
-</div>
-<div>
-    <img src="{{ docs_base_path }}/assets/img/articles/dropbox-access.png" style="line-height: 1.42857143;">&nbsp;
-    <br>
-</div>
-<div>
-    <br>
-    <hr>
-</div>
-<div>
-     <h3 style="font-family: 'Noto Sans', Helvetica, Arial, sans-serif; color: rgb(51, 51, 51);">Open Source Users</h3>
+<p>You can automate database backup download of your ERPNext account into your Dropbox account.</p>
 
-</div>
-<div>
-    <br>
-</div>
-<div><b>Step 1: </b>Go to&nbsp;<a href="https://www.dropbox.com/developers/apps" target="_blank" style="line-height: 1.42857143;">https://www.dropbox.com/developers/apps</a>
+<h4>Step 1: Go to Setup</h4>
 
-</div>
-<div><b>Step 2:</b> Create a new app</div>
+<p><code>Explore &gt; Setup &gt; Integrations &gt; Dropbox Backup</code></p>
+
+<h4>Step 2: Activate</h4>
+
+<p>In the Dropbox Backup, check "Send Backups to Dropbox" to active this feature. On checking this field, you will find field to set Frequency and notification Email.</p>
+
+<h4>Step 3: Set Frequency</h4>
+
+<p>Set Frequency to download backup in your Dropbox account.</p>
+
+<p><img class="screenshot" alt="set frequency" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-1.png"></p>
+
+<h4>Step 4: Allow Dropbox Access</h4>
+
+<p>After setting frequency and updating notification email, click on <code>Allow Dropbox access</code>. On clicking this button, the Dropbox login page will open in the new tab. This might require you to allow pop-up for your ERPNext account.</p>
+
+<h4>Step 5: Login to Dropbox</h4>
+
+<p>Login to your Dropbox account by entering login credentials.</p>
+
+<p><img class="screenshot" alt="Login" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-2.png"></p>
+
+<h4>Step 6: Allow</h4>
+
+<p>On successfull login, you will find a confirmation message as following. Click on "Allow" to let your ERPNext account have access to your Dropbox account.</p>
+
+<p><img class="screenshot" alt="Allow" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-3.png"></p>
+
+<p>With this, a folder called "ERPNext" will be created in your Dropbox account, and database backup will start to auto-download in it.</p>
+
+<h2>Open Source Users</h2>
+
+<h4>Step 1: Go to</h4>
+
+<p><a href="https://www.dropbox.com/developers/apps" target="_blank" style="line-height: 1.42857143;">https://www.dropbox.com/developers/apps</a></p>
+
+<h4>Step 2:Create a new app</h4>
+
+<p><img class="screenshot" alt="Create new" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-open-3.png"></p>
+
+<h4>Step 3: Fill in details for the app</h4>
+
+<p><img class="screenshot" alt="Create new" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-open-1.png"></p>
+
+<p>-
+<img class="screenshot" alt="Create new" src="https://frappe.github.io/erpnext/assets/img/setup/dropbox-open-2.png"></p>
+
+<h4>Step 4: Settings in Site Config</h4>
+
+<p>After the app is created, note the app key and app secret and enter in <code>sites/{sitename}/site_config.json</code> as follows,</p>
+
 <div>
-    <img src="{{ docs_base_path }}/assets/img/articles/Screen Shot 2014-11-11 at 11.22.38 pm.png">
-    <br>
-</div>
-<div><b>Step 3: </b>Fill in details for the app.</div>
-<div>
-    <img src="{{ docs_base_path }}/assets/img/articles/Screen Shot 2014-11-11 at 11.23.32 pm.png">
-    <br>
-</div>
-<div>
-    <br>
-</div>
-<div><b>Step 4: </b>After the app is created, note the app key and app secret and enter in `sites/{sitename}/site_config.json` as follows,</div>
-<div>
-    <br>
-</div>
-<div><pre><code>{ 
+    <pre>
+        <code>{ 
  "db_name": "demo", 
  "db_password": "DZ1Idd55xJ9qvkHvUH", 
  "dropbox_access_key": "ACCESSKEY", 
  "dropbox_secret_key": "SECRECTKEY" 
-} </code></pre>
-    <br>
+}       
+        </code>
+    </pre>
 </div>
-<div><b>Step 5: </b>Setup dropbox backups from the backup manager as shown in previous section.</div>
+
+<h4>Step 5: Complete Backup</h4>
+
+<p>Setup dropbox backups from the backup manager as shown in previous section.</p>
+
 </div>
 				</div>
 			</div>
@@ -217,7 +214,7 @@
 	<div class="page-content">
 	<div class="edit-container text-center">
 		<i class="icon icon-smile"></i>
-		<a class="text-muted edit" href="https://github.com/frappe/erpnext/blob/develop/erpnext/docs/user/manual/en/setting-up/articles/setting-up-dropbox-backups.html">
+		<a class="text-muted edit" href="https://github.com/frappe/erpnext/blob/develop/erpnext/docs/user/manual/en/setting-up/articles/setting-up-dropbox-backups.md">
 			Improve this page
 		</a>
 	</div>

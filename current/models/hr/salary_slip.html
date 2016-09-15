@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -893,23 +889,9 @@
     
     
 	<p class="docs-attr-name">
-        <a name="calculate_ded_total" href="#calculate_ded_total" class="text-muted small">
+        <a name="calculate_component_amounts" href="#calculate_component_amounts" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>calculate_ded_total</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="calculate_earning_total" href="#calculate_earning_total" class="text-muted small">
-            <i class="icon-link small" style="color: #ccc;"></i></a>
-		<b>calculate_earning_total</b>
+		<b>calculate_component_amounts</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -991,12 +973,40 @@
     
     
 	<p class="docs-attr-name">
+        <a name="eval_condition_and_formula" href="#eval_condition_and_formula" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>eval_condition_and_formula</b>
+        <i class="text-muted">(self, d, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_data_for_eval" href="#get_data_for_eval" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>get_data_for_eval</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns data for evaluating formula</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="get_emp_and_leave_details" href="#get_emp_and_leave_details" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>get_emp_and_leave_details</b>
         <i class="text-muted">(self)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><p>First time, load all the components from salary structure</p>
 </div>
 	<br>
 
@@ -1075,6 +1085,20 @@
     
     
 	<p class="docs-attr-name">
+        <a name="process_salary_structure" href="#process_salary_structure" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>process_salary_structure</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Calculate salary after salary structure details have been updated</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="pull_emp_details" href="#pull_emp_details" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>pull_emp_details</b>
@@ -1092,7 +1116,7 @@
         <a name="pull_sal_struct" href="#pull_sal_struct" class="text-muted small">
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>pull_sal_struct</b>
-        <i class="text-muted">(self, ss_doc)</i>
+        <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -1121,6 +1145,20 @@
             <i class="icon-link small" style="color: #ccc;"></i></a>
 		<b>set_time_sheet</b>
         <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="sum_components" href="#sum_components" class="text-muted small">
+            <i class="icon-link small" style="color: #ccc;"></i></a>
+		<b>sum_components</b>
+        <i class="text-muted">(self, component_type, total_field)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

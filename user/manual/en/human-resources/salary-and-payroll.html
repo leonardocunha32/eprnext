@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -181,16 +177,63 @@ and Deductions. </p>
   <p>Human Resources &gt; Setup &gt; Salary Structure &gt; New Salary Structure</p>
 </blockquote>
 
-<h4>Figure 1:Salary Structure</h4>
+<h4>Figure 1.1:Salary Structure</h4>
 
 <p><img class="screenshot" alt="Salary Structure" src="https://frappe.github.io/erpnext/assets/img/human-resources/salary-structure.png"></p>
 
 <h3>In the Salary Structure,</h3>
 
 <ul>
-<li>Select the Employee</li>
+<li>Select the Employees and enter Base (which is base salary or CTC) and Variable (if applicable)</li>
 <li>Set the starting date from which this is valid (Note: There can only be one Salary Structure that can be “Active” for an Employee during any period)</li>
-<li>In the “Earnings” and “Deductions” table all your defined Earning Type and Deductions Type will be auto-populated. Set the values of the Earnings and Deductions and save the Salary Structure.</li>
+</ul>
+
+<h4>Figure 1.2:Salary Structure for Salary Slip based on Timesheet</h4>
+
+<p><img class="screenshot" alt="Salary Structure" src="https://frappe.github.io/erpnext/assets/img/human-resources/salary-timesheet.png"></p>
+
+<h3>Salary Slip Based on Timesheet</h3>
+
+<p>Salary Slip based on Timesheet is applicable if you have timesheet based payroll system</p>
+
+<ul>
+<li>Check "Salary Slip Based on Timesheet"</li>
+<li>Select the salary component and enter Hour Rate (Note: This salary component gets added to earnings in Salary Slip)</li>
+</ul>
+
+<h3>Earnings and Deductions in Salary Structure</h3>
+
+<p>In the “Earnings” and “Deductions” tables, you can calculate the values of Salary Components based on,</p>
+
+<ul>
+<li>Condition and Formula</li>
+</ul>
+
+<h4>Figure 1.3:Condition and Formula</h4>
+
+<p><img class="screenshot" alt="Salary Structure" src="https://frappe.github.io/erpnext/assets/img/human-resources/condition-formula.png"></p>
+
+<ul>
+<li>Condition and Amount</li>
+</ul>
+
+<h4>Figure 1.4:Condition and Amount</h4>
+
+<p><img class="screenshot" alt="Salary Structure" src="https://frappe.github.io/erpnext/assets/img/human-resources/condition-amount.png">  </p>
+
+<ul>
+<li>Only Formula  </li>
+<li>Only Amount</li>
+</ul>
+
+<p>Save the Salary Structure.</p>
+
+<p>In conditions and formulas, </p>
+
+<ul>
+<li>Use field "base" for using base salary of the Employee</li>
+<li>Use Salary Component abbreviations. For example: BS for Basic Salary</li>
+<li>Use field name for employee details. For example: Employment Type for employment_type</li>
 </ul>
 
 <h3>Leave Without Pay (LWP)</h3>
@@ -212,8 +255,11 @@ Earning Types and Deduction Types.</p>
 <p>Once the Salary Structure is created, you can make a salary slip from the same
 form or you can process your payroll for the month using Process Payroll.</p>
 
-<p>To create a salary slip from Salary Structure, click on the button Make Salary
-Slip.</p>
+<p>To create a new Salary Slip go to:</p>
+
+<blockquote>
+  <p>Human Resources &gt; Setup &gt; Salary Slip &gt; New Salary Slip</p>
+</blockquote>
 
 <h4>Figure 2: Salary Slip</h4>
 

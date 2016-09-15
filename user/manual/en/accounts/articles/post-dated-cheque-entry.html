@@ -29,14 +29,10 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<!-- <a class="navbar-brand ellipsis" href="https://frappe.github.io/erpnext//"> -->
 				<a class="navbar-brand ellipsis"
 					 href="https://frappe.github.io/erpnext//">
 					<span>ERPNext</span>
 				</a>
-				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
-					<i class="octicon octicon-three-bars"></i>
-				</a> -->
 				<div class="dropdown">
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
@@ -135,35 +131,35 @@
 					<div class="page_content">
 <h1>Post Dated Cheque Entry</h1>
 
-<p>Post Dated Cheque is a cheque dated on future date. Party generally give post dated cheque, as advance payment. This cheque would be cleared only after cheque date has arrived.</p>
+<p>Post Dated Cheque is a cheque dated on future date. Party generally give post dated cheque, as advance payment. This cheque would be cleared only when cheque date arrives.</p>
 
-<p>In ERPNext, create Journal Entries for post dated cheque.</p>
+<p>In ERPNext, create Payment Entry for post dated cheque.</p>
 
-<h4>New Journal Entry</h4>
+<h4>New Payment Entry</h4>
 
 <p>To open new journal voucher go to </p>
 
-<p><code>Accounts &gt; Documents &gt; Journal Entry &gt; New</code></p>
+<p><code>Explore &gt; Accounts &gt; Payment Entry &gt; New</code></p>
 
 <h4>Set Posting Date</h4>
 
 <p>Assuming your Cheque Date is 31st December, 2016 (or any future date). As a result, this posting in your bank ledger will appear on Posting Date updated.</p>
 
-<p><img alt="JE Posting Date" class="screenshot" src="https://frappe.github.io/erpnext/assets/img/articles/post-dated-1.gif"></p>
+<p><img alt="JE Posting Date" class="screenshot" src="https://frappe.github.io/erpnext/assets/img/articles/post-dated-1.png"></p>
 
-<p>Note: Journal Voucher Reference Date should equal to or less than Posting Date.</p>
+<p>Note: Payment Entry Reference Date should equal to or less than Posting Date.</p>
 
 <h4>Step 3: Save and Submit</h4>
 
-<p>After entering required details, Save and Submit the Journal Entry.</p>
+<p>After entering required details, Save and Submit the Payment Entry.</p>
 
 <h4>Adjusting Post Dated  Cheque Entry</h4>
 
-<p>If Post Dated Journal Entry needs to be adjusted against any invoice, it can be accomplished via <a href="https://frappe.github.io/erpnext/user/manual/en/accounts/tools/payment-reconciliation.html">Payment Reconciliation Tool</a>.</p>
+<p>You can adjust Post Dated Payment Entry against an invoice via <a href="https://frappe.github.io/erpnext/user/manual/en/accounts/tools/payment-reconciliation.html">Payment Reconciliation Tool</a>.</p>
 
 <p>When cheque is cleared, i.e. on actual date on the cheque, you can update its Clearance Date via <a href="https://frappe.github.io/erpnext/user/manual/en/accounts/tools/bank-reconciliation.html">Bank Reconciliation Tool</a>.</p>
 
-<p>You might find value of this Journal Entry already reflecting against bank's ledger. You should check <strong>Bank Reconciliation Statement</strong>, a report in the account module to know difference of bank balance as per system, and actual balance in a account.
+<p>In the Chart of Accounts, you might find value of this Payment Entry already reflecting against bank Account. You should check <strong>Bank Reconciliation Statement</strong>, a report in the account module to know difference of bank balance as per system, and actual balance in the bank's statement.
 <!-- markdown --></p>
 
 </div>
